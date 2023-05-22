@@ -5,7 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import com.vanegas1.bancotracker.R
+import com.vanegas1.bancotracker.databinding.FragmentHomeBinding
+import com.vanegas1.bancotracker.ui.banco.viewmodel.BancoViewModel
 
 /**
  * A simple [Fragment] subclass.
@@ -14,8 +17,11 @@ import com.vanegas1.bancotracker.R
  */
 
 class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private lateinit var binding: Fragment
+    private val bancoViewModel:BancoViewModel by activityViewModels {
+        BancoViewModel.Factory
+    }
+
+    private lateinit var binding: FragmentHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

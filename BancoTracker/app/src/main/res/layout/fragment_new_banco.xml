@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.banco.newbanco.NewBancoFragment">
 
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.vanegas1.bancotracker.ui.banco.viewmodel.BancoViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
