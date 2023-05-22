@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.vanegas1.bancotracker.ui.banco.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_newBancoFragment"
+            app:destination="@id/newBancoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bancoFragment"
+            app:destination="@id/bancoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newBancoFragment"
+        android:name="com.vanegas1.bancotracker.ui.banco.newbanco.NewBancoFragment"
+        android:label="fragment_new_banco"
+        tools:layout="@layout/fragment_new_banco" />
+    <fragment
+        android:id="@+id/bancoFragment"
+        android:name="com.vanegas1.bancotracker.ui.banco.BancoFragment"
+        android:label="fragment_banco"
+        tools:layout="@layout/fragment_banco" />
+</navigation>

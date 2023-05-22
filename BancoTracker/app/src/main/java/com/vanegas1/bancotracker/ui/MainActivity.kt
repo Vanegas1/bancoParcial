@@ -1,7 +1,8 @@
-package com.vanegas1.myapplication
+package com.vanegas1.bancotracker.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.vanegas1.bancotracker.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

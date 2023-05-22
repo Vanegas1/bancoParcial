@@ -1,4 +1,4 @@
-package com.vanegas1.myapplication
+package com.vanegas1.bancotracker
 
 import org.junit.Test
 
