@@ -38,7 +38,7 @@ class BancoViewModel(private val repository: BancoRepository):ViewModel() {
         )
 
         addBancos(newBanco)
-        status.value = MOVIE_CREATED
+        status.value = BANK_CREATED
     }
 
     fun clearStatus(){
@@ -50,9 +50,9 @@ class BancoViewModel(private val repository: BancoRepository):ViewModel() {
         country.value = ""
     }
 
-    fun setSelectedBanco(movie: BancoModel){
-        name.value = movie.name
-        country.value = movie.country
+    fun setSelectedBanco(banco: BancoModel){
+        name.value = banco.name
+        country.value = banco.country
     }
 
     companion object{
@@ -63,7 +63,7 @@ class BancoViewModel(private val repository: BancoRepository):ViewModel() {
             }
         }
 
-        const val MOVIE_CREATED = "Banco created"
+        const val BANK_CREATED = "Banco created"
         const val WRONG_DATA = "Wrong data"
         const val INACTIVE = ""
     }
